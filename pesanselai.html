@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pesancklt</title>
+    <link rel="stylesheet" href="CSS/pesancklt.css" />
+    <link rel="shortcut icon" href="aka.png" type="image/x-icon" />
+    <link rel="icon" href="aka.png" type="image/x-icon" />
+    <style>
+      #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 100%;
+        border-top: 16px solid #795723;
+        -webkit-animation: spin 1.2s linear infinite;
+        animation: spin 1.2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <header>
+        <div class="logo">
+          <a href="#"><img src="aka.png" height="55px" width="55px" /></a>
+        </div>
+        <div class="bakar">
+          <a href="kontak.html">KONTAK</a>
+          <a id="login">HEGAR</a>
+        </div>
+      </header>
+      <div class="backgroundroti">
+        <img id="cklt" src="strawbery.jpg" width="250" height="220" />
+        <a id="A"
+          >ROTI BAKAR SELAI STRAWBERRY DAN BLUEBERRY<br />ALAMAT PENGANTARAN
+          :<br /><br />
+          <input
+            type="text"
+            class="alamat"
+            placeholder="Alamat"
+          /><br /><br />METODE PEMBAYARAN :<br />
+          <p id="TUNAI">TUNAI</p></a
+        >
+      </div>
+      <div class="M">
+        <a><b>RINCIAN PEMBAYARAN :</b></a
+        ><br />
+        <a>ROTI BAKAR STRAWBERY DAN BLUEBERRY x 1 =<b> Rp.12.000</b></a
+        ><br />
+        <a>ONGKIR =<b> Rp.3.000</b></a
+        ><br />
+        <a>TOTAL :</a><br /><br />
+        <a><b>Rp.15.000,00-</b></a
+        ><a id="btn" href="ucapanpesan.html"><button>PESAN</button></a>
+        <br />
+        <br />
+        <a href="menulogn.html"><button>KEMBALI</button></a>
+      </div>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1800);
+      }
+
+      function showPage() {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('myDiv').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  background-color: #6d2424;
+  background-size: cover;
+  margin: 0;
+}
+header {
+  display: flex;
+  gap: 80px;
+  background-color: #451414;
+  padding: 15px 10px 10px 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.isi {
+  display: grid;
+}
+.logo {
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 60px;
+  padding: 5px 5px 5px 9px;
+  display: flex;
+  box-shadow: black 3px 3px 3px;
+}
+.logo::after {
+  content: 'Roti Bakar Jaya';
+  font-size: 22px;
+  color: black;
+  margin-top: 15px;
+}
+.bakar {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 35px;
+}
+#login {
+  margin-left: 55vw;
+}
+.backgroundroti {
+  display: flex;
+  column-gap: 15px;
+  background-color: #795723;
+}
+.teks {
+  display: grid;
+  font-size: 25px;
+  color: white;
+}
+.citarasa {
+  color: white;
+  font-size: 22px;
+  padding-left: 15px;
+}
+input {
+  border-radius: 50px;
+  width: 35vw;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.271);
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
